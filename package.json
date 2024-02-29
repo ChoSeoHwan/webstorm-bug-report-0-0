@@ -1,0 +1,28 @@
+{
+  "name": "webstorm-bug-report-0-0",
+  "version": "1.0.0",
+  "license": "MIT",
+  "packageManager": "yarn@4.1.0",
+  "type": "module",
+  "main": "dist/src/index.js",
+  "exports": {
+    ".": {
+      "default": "./dist/src/index.js",
+      "types": "./dist/src/index.d.ts"
+    },
+    "./sub": {
+      "default": "./dist/src/sub/index.js",
+      "types": "./dist/src/sub/index.d.ts"
+    }
+  },
+  "types": "dist/src/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "devDependencies": {
+    "typescript": "^5.3.3"
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.json"
+  }
+}
